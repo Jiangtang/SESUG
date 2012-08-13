@@ -1,0 +1,12 @@
+Sub delete_table_frame()
+  Dim mytable As Table
+  Application.ScreenUpdating = False
+  
+  For Each mytable In ActiveDocument.Tables
+    mytable.Range.Editors.Add wdEditorEveryone
+  Next
+  ActiveDocument.SelectAllEditableRanges (wdEditorEveryone)
+  ActiveDocument.DeleteAllEditableRanges (wdEditorEveryone)
+  Application.ScreenUpdating = True
+End Sub
+
