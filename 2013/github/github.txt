@@ -1,0 +1,18 @@
+Forking makes my version of the project more isolated from the original one because I don't have to be on the collaborators list of the original project
+
+You cannot always make a branch or pull an existing branch and push back to it, because you are not registered as a collaborator for that specific project.
+
+se the following commands to add the 'upsteam' (original project location) as a remote branch so that you can get their updates into your branch
+
+
+Forking is nothing more than a clone on the GitHub server side:
+
+
+The intended English sense of 'fork' here is the sense in which a road or river splits from one into two, which may then diverge and have different destinations (called a fork presumably because of the visual similarity to a two-tine fork, like an old agricultural fork
+
+
+svn checkout
+When you are cloning a GitHub repo on your local workstation, you cannot contribute back to the upstream repo unless you are explicitly declared as "contributor".
+So that clone (to your local workstation) isn't a "fork". It is just a clone.
+Download zip: just local copy
+Clone: serve as local repository with all original commit information

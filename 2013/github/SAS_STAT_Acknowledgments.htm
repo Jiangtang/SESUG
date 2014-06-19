@@ -1,0 +1,2278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.aftercaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 4pt;
+}
+.batch
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  padding: 7px;
+}
+.beforecaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.body
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.bodydate
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+  vertical-align: top;
+  width: 100%;
+}
+.bycontentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.byline
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.bylinecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.caption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.cell
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.container
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.contentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contentprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contents
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.contentsdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.contenttitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.continued
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+}
+.data
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasis
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasisfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.dataempty
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datafixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datastrong
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.datastrongfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.date
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.document
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+a:link {
+color:#0000FF
+}
+a:visited {
+color:#800080
+}
+a:active {
+color:#800080
+}
+.errorbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.errorcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.errorcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.extendedpage
+{
+  background-color: #FAFBFE;
+  border: 1pt solid #000000;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+.fatalbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.fatalcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.fatalcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.folderaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.footer
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footeremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footeremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.footerstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.frame
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.graph
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.header
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headeremphasis
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headeremphasisfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.headersandfooters
+{
+  background-color: #EDF2F9;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrong
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrongfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.index
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.indexaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.indextitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.layoutcontainer
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.layoutregion
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.linecontent
+{
+  background-color: #FAFBFE;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.list
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.list10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.list3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.listitem10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.listitem3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.note
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notebanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.notecontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notecontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.output
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.pageno
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+}
+.pages
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.pagesdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.pagesitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.pagesproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagesprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagestitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.paragraph
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.parskip
+{
+  border: 0px solid #000000;
+  border-spacing: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.prepage
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.proctitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.proctitlefixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooter
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooteremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooteremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooterempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowfooterstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheader
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderemphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowheaderstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemtitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systitleandfootercontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.table
+{
+  border-bottom-width: 0px;
+  border-collapse: collapse;
+  border-color: #C1C1C1;
+  border-left-width: 1px;
+  border-right-width: 0px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-top-width: 1px;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.titleandnotecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.titlesandfooters
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.usertext
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warnbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.warncontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warncontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</script>
+
+<div class="branch">
+<a name="IDX"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">The SAS System</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set WORK.NAME">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="l header" scope="col">name</th>
+<th class="l header" scope="col">institute</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">Alan Agresti</td>
+<td class="l data">University of Florida</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data">Paul Allison</td>
+<td class="l data">University of Pennsylvania</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="l data">Douglas Bates</td>
+<td class="l data">University of Wisconsin</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="l data">John Barnard Jr.</td>
+<td class="l data">Cleveland Clinic Foundation</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="l data">David Binder (deceased)</td>
+<td class="l data">formerly of David Binder Research</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="l data">Suzette Blanchard</td>
+<td class="l data">Frontier Science Technology Research Foundation</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="l data">Mary Butler Moore</td>
+<td class="l data">formerly of University of Florida at Gainesville</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="l data">Wilbert P. Byrd</td>
+<td class="l data">Clemson University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="l data">Vincent Carey</td>
+<td class="l data">Harvard University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="l data">Sally Carson</td>
+<td class="l data">RAND</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">11</th>
+<td class="l data">Love Casanova</td>
+<td class="l data">CSC-FSG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">12</th>
+<td class="l data">Helene Cavior</td>
+<td class="l data">Abacus Concepts</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">13</th>
+<td class="l data">Rao Chaganty</td>
+<td class="l data">Old Dominion University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">14</th>
+<td class="l data">George Chao</td>
+<td class="l data">DuPont Merek Pharmaceutical Company</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">15</th>
+<td class="l data">Colin Chen</td>
+<td class="l data">Fannie Mae</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">16</th>
+<td class="l data">Daniel M. Chilko</td>
+<td class="l data">West Virginia University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">17</th>
+<td class="l data">Marc Cohen</td>
+<td class="l data">Fair Isaac Corporation</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">18</th>
+<td class="l data">Jan de Leeuw</td>
+<td class="l data">University of California, Los Angeles</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">19</th>
+<td class="l data">Dave DeLong</td>
+<td class="l data">Duke University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">20</th>
+<td class="l data">Alex Dmitrienko</td>
+<td class="l data">Eli Lilly</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">21</th>
+<td class="l data">Sandra Donaghy</td>
+<td class="l data">North Carolina State University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">22</th>
+<td class="l data">David B. Duncan</td>
+<td class="l data">Johns Hopkins University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">23</th>
+<td class="l data">Paul Eilers</td>
+<td class="l data">Leiden University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">24</th>
+<td class="l data">Scott Emerson</td>
+<td class="l data">University of Washington</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">25</th>
+<td class="l data">Michael Farrell</td>
+<td class="l data">Oak Ridge National Laboratory</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">26</th>
+<td class="l data">Stewart Fossceco</td>
+<td class="l data">SLF Consulting</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">27</th>
+<td class="l data">Michael Friendly</td>
+<td class="l data">York University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">28</th>
+<td class="l data">Rudolf J. Freund</td>
+<td class="l data">Texas A&amp;M University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">29</th>
+<td class="l data">Wayne Fuller</td>
+<td class="l data">Iowa State University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">30</th>
+<td class="l data">Andrzej Galecki</td>
+<td class="l data">University of Michigan</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">31</th>
+<td class="l data">A. Ronald Gallant</td>
+<td class="l data">Duke University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">32</th>
+<td class="l data">Joseph Gardiner</td>
+<td class="l data">Michigan State University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">33</th>
+<td class="l data">Charles Gates</td>
+<td class="l data">Texas A&amp;M University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">34</th>
+<td class="l data">Thomas M. Gerig</td>
+<td class="l data">North Carolina State University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">35</th>
+<td class="l data">Francis Giesbrecht</td>
+<td class="l data">North Carolina State University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">36</th>
+<td class="l data">Harvey J. Gold</td>
+<td class="l data">North Carolina State University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">37</th>
+<td class="l data">Kenneth Goldberg</td>
+<td class="l data">Centocor Inc</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">38</th>
+<td class="l data">Robert J. Gray</td>
+<td class="l data">Harvard University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">39</th>
+<td class="l data">Donald Guthrie</td>
+<td class="l data">University of California, Los Angeles</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">40</th>
+<td class="l data">Gerald Hajian</td>
+<td class="l data">Schering Plough Research Institute</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">41</th>
+<td class="l data">Bob Hamer</td>
+<td class="l data">University of North Carolina at Chapel Hill</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">42</th>
+<td class="l data">Frank E. Harrell Jr.</td>
+<td class="l data">Vanderbilt University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">43</th>
+<td class="l data">Wolfgang M. Hartmann</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">44</th>
+<td class="l data">Walter Harvey</td>
+<td class="l data">Ohio State University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">45</th>
+<td class="l data">Douglas Hawkins</td>
+<td class="l data">University of Minnesota</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">46</th>
+<td class="l data">Xuming He</td>
+<td class="l data">University of Illinois at Urbana-Champaign</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">47</th>
+<td class="l data">Ronald W. Helms</td>
+<td class="l data">Rho, Inc.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">48</th>
+<td class="l data">Joseph Hilbe</td>
+<td class="l data">Arizona State University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">49</th>
+<td class="l data">Gerry Hobbs</td>
+<td class="l data">West Virginia University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">50</th>
+<td class="l data">Ronald R. Hocking</td>
+<td class="l data">Texas A &amp; M University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">51</th>
+<td class="l data">Nick Horton</td>
+<td class="l data">Smith College</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">52</th>
+<td class="l data">Julian Horwich</td>
+<td class="l data">Camp Conference Company</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">53</th>
+<td class="l data">Jason C. Hsu</td>
+<td class="l data">Ohio State University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">54</th>
+<td class="l data">David Hurst</td>
+<td class="l data">University of Alabama at Birmingham</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">55</th>
+<td class="l data">Joseph G. Ibrahim</td>
+<td class="l data">University of North Carolina at Chapel Hill</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">56</th>
+<td class="l data">Emilio A. Icaza</td>
+<td class="l data">Louisiana State University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">57</th>
+<td class="l data">Jun Jie</td>
+<td class="l data">Purdue University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">58</th>
+<td class="l data">Joerg Kaufman</td>
+<td class="l data">Bayer Schering Pharma AG</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">59</th>
+<td class="l data">William Kennedy</td>
+<td class="l data">Iowa State University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">60</th>
+<td class="l data">Gary Koch</td>
+<td class="l data">University of North Carolina at Chapel Hill</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">61</th>
+<td class="l data">Roger Koenker</td>
+<td class="l data">University of Illinois at Urbana-Champaign</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">62</th>
+<td class="l data">Alexander Kolovos</td>
+<td class="l data">SpaceTimeWorks LLC</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">63</th>
+<td class="l data">Kenneth L. Koonce</td>
+<td class="l data">Louisiana State University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">64</th>
+<td class="l data">Rich La Valley</td>
+<td class="l data">Strategic Technology Solutions</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">65</th>
+<td class="l data">Russell V. Lenth</td>
+<td class="l data">University of Iowa</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">66</th>
+<td class="l data">Charles Lin</td>
+<td class="l data">U.S. Census Bureau</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">67</th>
+<td class="l data">Danyu Lin</td>
+<td class="l data">University of North Carolina</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">68</th>
+<td class="l data">Ardell C. Linnerud</td>
+<td class="l data">North Carolina State University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">69</th>
+<td class="l data">Ramon C. Littel</td>
+<td class="l data">University of Florida</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">70</th>
+<td class="l data">George MacKenzie</td>
+<td class="l data">University of Oregon</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">71</th>
+<td class="l data">Brian Marx</td>
+<td class="l data">Louisiana State University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">72</th>
+<td class="l data">J. Jack McArdle</td>
+<td class="l data">University of Southern California</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">73</th>
+<td class="l data">Roderick P. McDonald</td>
+<td class="l data">Macquarie University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">74</th>
+<td class="l data">Alfio Marazzi</td>
+<td class="l data">University of Lausanne</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">75</th>
+<td class="l data">J. Philip Miller</td>
+<td class="l data">Washington University Medical School</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">76</th>
+<td class="l data">George Milliken</td>
+<td class="l data">Kansas State University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">77</th>
+<td class="l data">Robert J. Monroe</td>
+<td class="l data">North Carolina State University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">78</th>
+<td class="l data">Robert D. Morrison</td>
+<td class="l data">Oklahoma State University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">79</th>
+<td class="l data">Keith Muller</td>
+<td class="l data">University of Florida</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">80</th>
+<td class="l data">Anupama Narayanan</td>
+<td class="l data">Procter &amp; Gamble Co</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">81</th>
+<td class="l data">Meltem Narter</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">82</th>
+<td class="l data">Ralph G. O’Brien</td>
+<td class="l data">Cleveland Clinic Foundation</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">83</th>
+<td class="l data">Kenneth Offord</td>
+<td class="l data">Mayo Clinic</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">84</th>
+<td class="l data">Christopher R. Olinger</td>
+<td class="l data">d-Wise Technologies</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">85</th>
+<td class="l data">Christopher J. Paciorek</td>
+<td class="l data">Harvard University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">86</th>
+<td class="l data">Robert Parks</td>
+<td class="l data">Washington University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">87</th>
+<td class="l data">Richard M. Patterson</td>
+<td class="l data">Auburn University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">88</th>
+<td class="l data">Virginia Patterson</td>
+<td class="l data">University of Tennessee</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">89</th>
+<td class="l data">Cliff Pereira</td>
+<td class="l data">Oregon State University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">90</th>
+<td class="l data">Hans-Peter Piepho</td>
+<td class="l data">Universität Hohenheim</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">91</th>
+<td class="l data">Edward Pollak</td>
+<td class="l data">Iowa State University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">92</th>
+<td class="l data">Stephen Portnoy</td>
+<td class="l data">University of Illinois</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">93</th>
+<td class="l data">John Preisser</td>
+<td class="l data">University of North Carolina at Chapel Hill</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">94</th>
+<td class="l data">C. H. Proctor</td>
+<td class="l data">North Carolina State University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">95</th>
+<td class="l data">Bahjat Qaqish</td>
+<td class="l data">University of North Carolina at Chapel Hill</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">96</th>
+<td class="l data">Dana Quade</td>
+<td class="l data">University of North Carolina at Chapel Hill</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">97</th>
+<td class="l data">Bill Raynor</td>
+<td class="l data">Kimberly Clark</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">98</th>
+<td class="l data">Georgia Roberts</td>
+<td class="l data">Statistics Canada</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">99</th>
+<td class="l data">James Roger</td>
+<td class="l data">GlaxoSmithKline (retired)</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">100</th>
+<td class="l data">Peter Rousseeuw</td>
+<td class="l data">University of Antwerp</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">101</th>
+<td class="l data">Donald Rubin</td>
+<td class="l data">Harvard University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">102</th>
+<td class="l data">Joseph L. Schafer</td>
+<td class="l data">Pennsylvania State University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">103</th>
+<td class="l data">Robert Schechter</td>
+<td class="l data">AstraZeneca</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">104</th>
+<td class="l data">Shayle Searle</td>
+<td class="l data">Cornell University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">105</th>
+<td class="l data">Pat Hermes Smith</td>
+<td class="l data">formerly of Ciba-Geigy</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">106</th>
+<td class="l data">Roger Smith</td>
+<td class="l data">formerly of USDA</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">107</th>
+<td class="l data">Phil Spector</td>
+<td class="l data">University of California, Berkeley</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">108</th>
+<td class="l data">Michael Speed</td>
+<td class="l data">Texas A&amp;M University at College Station</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">109</th>
+<td class="l data">William Stanish</td>
+<td class="l data">Statistical Insight</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">110</th>
+<td class="l data">Rodney Strand</td>
+<td class="l data">Orion Enterprises, LLC</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">111</th>
+<td class="l data">Walter Stroup</td>
+<td class="l data">University of Nebraska</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">112</th>
+<td class="l data">Robert Teichman</td>
+<td class="l data">ICI Americas Inc.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">113</th>
+<td class="l data">Terry M. Therneau</td>
+<td class="l data">Mayo Clinic</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">114</th>
+<td class="l data">Edward Vonesh</td>
+<td class="l data">Northwestern University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">115</th>
+<td class="l data">Grace Wahba</td>
+<td class="l data">University of Wisconsin at Madison</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">116</th>
+<td class="l data">Glenn Ware</td>
+<td class="l data">University of Georgia</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">117</th>
+<td class="l data">Peter H. Westfall</td>
+<td class="l data">Texas Tech University</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">118</th>
+<td class="l data">Edward W. Whitehorne</td>
+<td class="l data">CI Partners, LLC</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">119</th>
+<td class="l data">William Wigton</td>
+<td class="l data">USDA</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">120</th>
+<td class="l data">William Wilson</td>
+<td class="l data">University of North Florida</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">121</th>
+<td class="l data">Philip Whittall</td>
+<td class="l data">Unilever (retired)</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">122</th>
+<td class="l data">Dong Xiang</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">123</th>
+<td class="l data">Victor Yohai</td>
+<td class="l data">University of Buenos Aires</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">124</th>
+<td class="l data">Forrest W. Young (deceased)</td>
+<td class="l data">formerly of University of North Carolina at Chapel Hill</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">125</th>
+<td class="l data">Ke-Hai Yuan</td>
+<td class="l data">University of Notre Dame</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">126</th>
+<td class="l data">Ruben Zamar</td>
+<td class="l data">University of British Columbia</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">127</th>
+<td class="l data">Scott Zeger</td>
+<td class="l data">Johns Hopkins University</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+</body>
+</html>

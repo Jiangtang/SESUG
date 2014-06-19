@@ -1,0 +1,55 @@
+
+William Shakespeare shakespeare_1040@hotmail.com via listserv.uga.edu
+
+I know this is trivial, but I can't seem to get it to work and I can't
+find a good example.  I have a list of files, A1, A2,...An, that I need to
+concatenate (stack).  Since there are hundreds of files, It would be best
+to write a macro to generate the list.  All the examples I saw were to
+pipe a list of filenames which I can't do since I have other files in the
+directory.  Since I know the value of n, it seems like I could do
+something like:
+
+%macro list;
+  %do i = 1 %to 100;
+  %let lst=[some kind of array containing the file names];
+  %end;
+%mend list;
+
+Not exactly sure how to code.  Help appreciated.
+
+
+DONOT PICNIC!
+
+
+Forking makes my version of the project more isolated from the original one because I don't have to be on the collaborators list of the original project
+
+You cannot always make a branch or pull an existing branch and push back to it, because you are not registered as a collaborator for that specific project.
+
+se the following commands to add the 'upsteam' (original project location) as a remote branch so that you can get their updates into your branch
+
+
+Forking is nothing more than a clone on the GitHub server side:
+
+
+The intended English sense of 'fork' here is the sense in which a road or river splits from one into two, which may then diverge and have different destinations (called a fork presumably because of the visual similarity to a two-tine fork, like an old agricultural fork
+
+
+svn checkout
+When you are cloning a GitHub repo on your local workstation, you cannot contribute back to the upstream repo unless you are explicitly declared as "contributor".
+So that clone (to your local workstation) isn't a "fork". It is just a clone.
+Download zip: just local copy
+Clone: serve as local repository with all original commit information
+
+#######
+http://www.sesug.org/SESUG2013/abstract.html
+Repetitive Tasks and Dynamic Lists: Where to Find What You Need and How to Use It
+Richard Addy
+Paper B2B-06
+
+
+Chi-Square and T-Tests Using SAS®: Performance and Interpretation
+Jennifer Waller and Maribeth Johnson
+Paper B2B-07
+Lost in Translation: A Statistician’s (Basic) Perspective of PROC LIFETEST
+Alexandra Buck
+Paper B2B-10
