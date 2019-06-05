@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>R or Python:</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Jiangtang(JT) Hu   d-Wise" />
+    <meta name="date" content="2018-06-05" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# R or Python:
+## A Programer’s Response
+### Jiangtang(‘JT’) Hu <br/> d-Wise
+### 2018-06-05
+
+---
+
+
+
+
+
+class: inverse, center, middle
+
+# Disclaimer
+
+---
+
+# A Personal Journey to SAS, R and Python
+
+* Started to learn SAS at graduate school in 2006  
+
+* I then worked for SAS, Sanofi and d-Wise  
+
+* blogging at http://jiangtanghu.com/blog/  
+
+---
+# A Personal Journey to SAS, R and Python
+
+
+* Start to learn R in 2009
+
+* Still a frequent R user 
+  + blogging
+  + slides
+  + course works
+  + sometimes in professional work
+
+---
+# A Personal Journey to SAS, R and Python
+
+* Start to learn Python in 2014
+
+* Still a learner!
+  + MOOCs (machine learning/deep learning)
+  + pioneering work (deep learning in Clinical world?)
+  + occasionally in professional work
+
+
+---
+
+# R is comming to clinical
+
+
+--
+- R is well known in statistical departments
+--
+
+
+- long time language battle between SAS and R
+--
+
+- Some biostatisticians in pharma use R  
+
+--
+
+- Some FDA statistical reviewers use R
+
+--
+
+
+---
+# Python
+
+ 
+
+&gt; Python is not a statistic computing language!
+
+
+&gt; and this may be its greatest strength as a language for statistical computing. &lt;sup&gt;*&lt;/sup&gt;
+
+
+.footnote[[*] Python's Data Science Stack by Jake VanderPlas, JSM 2016 ]
+
+
+
+---
+
+# Language Design
+
+Python is simply a better language.
+
+
+---
+# Language Design: R
+
+--
+Ross Ihaka: problems with current R systems &lt;sup&gt;*&lt;/sup&gt;
+
+--
+* Tree-walking interpreters: no optimisation, inherently slow
+
+--
+
+* Call-by-value semantic: Produces vast amounts of data copying
+   + the design matrix is copied 6 times during the linear model fitting process
+--
+   
+.footnote[[*] Ross Ihaka: Towards a New Statistical Computing System, JSM 2014 ]
+---
+# Language Design: R
+
+Solution #1: Radical  
+
+* Ross Ihaka: new software!  &lt;sup&gt;*&lt;/sup&gt;
+
+.footnote[[*] Ross Ihaka: Towards a New Statistical Computing System, JSM 2014 ]
+
+---
+# Language Design: R
+
+Solution #2: system-wise modification
+
+* renjin, is a JVM based R interpreter (developed by Alexander Bertram)
+
+* Microsoft R Open
+
+* TIBCO Enterprise Runtime for R
+
+* ...
+---
+
+# Language Design: R
+
+Solution #3: package-wise optimization
+
+* Hadley Wickham: tidyverse
+
+
+---
+
+
+# Language Design: Python
+
+Python 2 vs Python 3
+
+* Text and binary data in Python 2 are a mess
+
+* Python 3 started at 2008 
+   + backwards-incompatible change!
+   
+* Python 2 will end at Jan 1, 2020
+
+
+---
+
+
+# Ecosystem: R
+
+Although facing fundamental drawbacks in core design, 
+
+R enjoys huge success due to its user contributed packages.
+
+
+---
+# Ecosystem: R
+
+One of the problems of R ecosystem is 
+
+most packages are one-person-project
+
+* Hadley Wickham: tidyverse
+
+
+---
+
+# Ecosystem: R
+
+One of the problems of R ecosystem is 
+
+most packages are one-person-project
+
+* Hadley Wickham: tidyverse 
+
+--
+
+  +  https://github.com/tidyverse/ggplot2   
+  +  https://github.com/matplotlib/matplotlib    
+  
+--
+    
+  +  https://github.com/tidyverse/dplyr  
+  +  https://github.com/pandas-dev/pandas  
+
+--
+
+---
+
+# Ecosystem: R
+
+One of the problems of R ecosystem is 
+
+most packages are (pure, isolated) collection of functions
+
+* E1071
+
+
+---
+
+# Ecosystem: Python
+
+
+![optional caption text](images/python-ecosystem.png)
+
+
+---
+
+# System Integration
+
+
+--
+R is a free software environment for statistical computing and graphics.  
+
+
+--
+
+Python is a general-purpose programming language:
+  * data sciences
+  * web frameworks
+  * system administration
+  * networking, automation, databases, ...
+
+--
+
+
+---
+
+# System Integration
+Conda: Package, dependency and environment management
+
+![optional caption text](images/conda.png)
+---
+# Back to the Future
+
+Python is the first-class citizen in the world of 
+
+* big data
+
+* artificial intelligence
+
+* machine learning
+
+* deep learning 
+
+* ...
+
+
+---
+
+# Kaggle: The State of ML and Data Science 2017 &lt;sup&gt;*&lt;/sup&gt;
+
+Python was the most commonly used data analysis tool across employed data scientists overall, but more Statisticians are still loyal to R.
+
+![optional caption text](images/kaggle-2017.png)
+
+
+.footnote[[*] https://www.kaggle.com/surveys/2017 ]
+
+---
+
+class: inverse, center, middle
+# Thanks! &lt;sup&gt;*&lt;/sup&gt;
+
+
+
+
+
+Jiangtang('JT') Hu 
+
+d-Wise
+
+jiangtanghu.com/blog
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script>
+(function() {
+  var i, text, code, codes = document.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+})();
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

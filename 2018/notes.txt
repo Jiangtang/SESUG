@@ -1,0 +1,8 @@
+https://www.r-bloggers.com/%E2%80%9Csimply-start-over-and-build-something-better%E2%80%9D/
+
+https://cran.r-project.org/doc/html/interface98-paper/paper_3.html R future
+
+https://www.stat.auckland.ac.nz/~ihaka/downloads/Massey.pdf R language design
+https://www.stat.auckland.ac.nz/~ihaka/downloads/New-System.pdf
+
+
